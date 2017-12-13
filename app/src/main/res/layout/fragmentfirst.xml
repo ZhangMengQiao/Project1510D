@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/banner">
+
+            </com.youth.banner.Banner>
+            <android.support.v4.view.ViewPager
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/pag">
+
+            </android.support.v4.view.ViewPager>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="京东秒杀"
+                android:id="@+id/name_miaosha"
+                android:textSize="25sp"
+                />
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/miaosha"
+                android:numColumns="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="京东推荐"
+                android:id="@+id/name_tuijian"
+                android:textSize="25sp"
+                />
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/tuijian"
+                android:numColumns="2">
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/shou_title"/>
+</RelativeLayout>
